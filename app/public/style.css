@@ -1,0 +1,85 @@
+
+body {
+		background-image: url("home.jpg");
+		background-size: cover;                     
+	    background-repeat: no-repeat;
+	    background-position: center center;
+}
+
+.jumbotron {
+		background: linear-gradient(#AED6F1, pink);
+		max-height: 230px;
+}
+.jumbotron h1{
+		float: left;
+		margin-top: 10px;
+		color: grey;
+		font-family: 'Armata', sans-serif;
+}
+.panel {
+		float: left;
+		width: 350px;
+		background: linear-gradient(#D2B4DE, grey);
+		border-style: none;
+		color: white;
+		opacity: .8;
+		margin-top: 20px;
+		margin-left: 60px;
+		box-shadow: 0 0 1.2em 0.8em #99c5ff;
+		font-family: 'Bree Serif', serif;
+
+}
+#survey {
+		background-color: #EC7063;
+		border-style: none;
+		color: white;
+		font-size: 18px;
+		padding: 15px;
+		border-radius: 10px;
+}
+.navbar{
+		background: linear-gradient(purple, black);
+		border-style: none; 
+		height: 50px;
+		color: silver;
+}
+
+.input-group .form-control:last-child:first-child {
+    	border-radius: 10px;
+}
+
+#links {
+		background-color: #D2B4DE;
+		width: 230px;
+		float: left;
+		text-align: center;
+		margin-left: 130px;
+		padding-top: 5px;
+		border-radius: 5px;
+		margin-top: 5px;
+}
+
+#questions {
+		margin-left: 50px;
+}
+
+#submitBtn{
+		background-color: #EC7063;
+		border-style: none;
+		color: white;
+		font-size: 18px;
+		padding: 15px;
+		border-radius: 10px;
+		margin-left: 20px;
+		margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
