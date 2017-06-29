@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Friend Finder</title>
+		<!-- Latest compiled and minified CSS -->
+		<script src="https://use.fontawesome.com/e8bdd5fe57.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Anton|Armata|Bowlby+One|Fresca|Frijole|Kanit|Orbitron" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		
+		<div class="row">
+			<div class="col-sm-1">
+			</div>
+			<div class="col-sm-7" id="questions">
+				<div class="panel2 panel-default">
+					<div class="panel2-heading">
+						<h1>Survey Questions</h1>
+					</div>
+					<div class="panel2-body">
+						<h2>About you</h2>
+						<br>
+						<h2>Name (Required)</h2>
+						<div class="input-group">
+							<input type="text" id="name" class="form-control" aria-describedby="basic-addon1">
+						</div>
+						<h2>Link to Photo Image (Required)</h2>
+						<div class="input-group">
+							<input type="text" id="photo" class="form-control" aria-describedby="basic-addon1">
+						</div><br>
+					</div>
+				</div>
+				<h2> I love Pets, They are an important part of my life.</h2>
+				<select data-placeholder="" class="chosen-select" id="q1">
+					<option value="" disabled selected>Select your option</option>
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+				<h2> On a Sunny day, I like to go outside.</h2>
+				<select data-placeholder="" class="chosen-select" id="q2">
+					<option value="" disabled selected>Select your option</option>
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+				<h2> Books are awesome, I really enjoy reading.</h2>
+				<select data-placeholder="" class="chosen-select" id="q3">
+					<option value="" disabled selected>Select your option</option>
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+				<h2> You rely more on your instinct than your imagination.</h2>
+				<select data-placeholder="" class="chosen-select" id="q4">
+					<option value="" disabled selected>Select your option</option>
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+				<h2> I would rather sleep in on my days off.</h2>
+				<select data-placeholder="" class="chosen-select" id="q5">
+					<option value="" disabled selected>Select your option</option>
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+				<h2> I have a good relationship with my family.</h2>
+				<select data-placeholder="" class="chosen-select" id="q6">
+					<option value="" disabled selected>Select your option</option>
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+				<h2> I believe that everything happens for a reason.</h2>
+				<select data-placeholder="" class="chosen-select" id="q7">
+					<option value="" disabled selected>Select your option</option>
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+				<h2>  I enjoy cooking for myself and others.</h2>
+				<select data-placeholder="" class="chosen-select" id="q8">
+					<option value="" disabled selected>Select your option</option>
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+				<h2> I believe in a higher power.</h2>
+				<select data-placeholder="" class="chosen-select" id="q9">
+					<option value="" disabled selected>Select your option</option>
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+				<h2> I have a poor grip on reality.</h2>
+				<select data-placeholder="" class="chosen-select" id="q10">
+					<option value="" disabled selected>Select your option</option>
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+				<br><br>
+				<button type="submit" class="btn2 btn-primary" data-toggle="modal" id="submitBtn">Submit</button>
+				
+			</div>
+			
+			<div class="col-sm-4">
+				<div id="resultsModal" class="modal hide" role="dialog">
+					<div class="modal-dialog">
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">X</button>
+								<h2 class="modal-title"><strong>Your compatible friend</strong></h2>
+							</div>
+							<div class="modal-body">
+								<h2 id="matchName"></h2>
+								<img id="matchImg" src ="" alt="" height="350" width="300">
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" id="closeModal" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script>
+				//grabbing the current page url
+				var currentURL = window.location.origin;
+				// on click function handles submit button
+				$("#submitBtn").on("click", function(){
+				
+				if( ($('#name').val().trim() !== "") && ($('#photo').val().trim() !== "") ) {
+			
+						// Create an object for the user's data
+						var userData = {
+										name: $("#name").val(),
+										photo: $("#photo").val(),
+										scores: [$("#q1").val(), 
+												 $("#q2").val(), 
+												 $("#q3").val(), 
+												 $("#q4").val(), 
+												 $("#q5").val(), 
+												 $("#q6").val(), 
+												 $("#q7").val(), 
+												 $("#q8").val(), 
+												 $("#q9").val(), 
+												 $("#q10").val(), ]
+					}
+							// AJAX post the data to the friends API.
+							$.post(currentURL + "/api/friends", userData, function(data){
+
+												// Grab the result from the AJAX post so that the best match's name and photo
+												$("#matchName").text(data.name);
+												$('#matchImg').attr("src", data.photo);
+												// Show the modal with the best match
+												$("#resultsModal").modal('toggle');
+												// clear the input fields in the form
+												$("#name").val("");
+												$("#photo").val("");
+							});
+					} else {
+							$(".modal-title").text("Missing required information");
+							$(".modal-body").html("<h3>You must answer all the questions before submitting!</h3>");
+							$("#resultsModal").modal('toggle');
+							}
+							return false;
+					});
+				// this function just takes you back to root when moda close is clicked
+				$('#closeModal').click(function() {
+
+						$.get('/',function(req,res){
+							
+						location.replace(res);
+		})
+		});
+		</script>
+		
+	</body>
+</html>
