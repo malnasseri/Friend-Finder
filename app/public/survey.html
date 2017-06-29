@@ -127,12 +127,12 @@
 			</div>
 			
 			<div class="col-sm-4">
-				<div id="resultsModal" class="modal hide" role="dialog">
+				<div id="resultsModal" class="modal fade" role="dialog">
 					<div class="modal-dialog">
 						<!-- Modal content-->
 						<div class="modal-content">
 							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal">X</button>
+								<!-- <button type="button" class="close" data-dismiss="modal">X</button> -->
 								<h2 class="modal-title"><strong>Your compatible friend</strong></h2>
 							</div>
 							<div class="modal-body">
@@ -145,6 +145,28 @@
 						</div>
 					</div>
 				</div>
+				<div id="warningModal" class="modal2 fade" role="dialog">
+  					<div class="modal2-dialog">
+
+   							 <!-- Modal content-->
+   							 <div class="modal2-content">
+      							<div class="modal2-header">
+        							<h4 class="modal2-title">Modal Header</h4>
+      							</div>
+      							<div class="modal2-body">
+        						<p>Some text in the modal.</p>
+      							</div>
+      							<div class="modal2-footer">
+        							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      							</div>
+    						</div>
+
+  					</div>
+				</div>
+
+
+
+
 			</div>
 		</div>
 		<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
@@ -154,6 +176,9 @@
 				//grabbing the current page url
 				var currentURL = window.location.origin;
 				// on click function handles submit button
+
+				 
+
 				$("#submitBtn").on("click", function(){
 				
 				if( ($('#name').val().trim() !== "") && ($('#photo').val().trim() !== "") ) {
@@ -173,6 +198,7 @@
 												 $("#q9").val(), 
 												 $("#q10").val(), ]
 					}
+
 							// AJAX post the data to the friends API.
 							$.post(currentURL + "/api/friends", userData, function(data){
 
@@ -186,12 +212,18 @@
 												$("#photo").val("");
 							});
 					} else {
-							$(".modal-title").text("Missing required information");
-							$(".modal-body").html("<h3>You must answer all the questions before submitting!</h3>");
-							$("#resultsModal").modal('toggle');
+							
+        							
+
+							$(".modal2-header").text("Missing required information");
+							$(".modal2-body").html("<h3>You must answer all the questions before submitting!</h3>");
+							$("#warningModal").modal('toggle');
+						
 							}
 							return false;
+
 					});
+
 				// this function just takes you back to root when moda close is clicked
 				$('#closeModal').click(function() {
 

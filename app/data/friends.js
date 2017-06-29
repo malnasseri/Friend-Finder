@@ -12,11 +12,7 @@ var friends = [ {
             }, {
             	"name" : "Petter Griffin",
                 "photo" : "https://familyguyaddicts.files.wordpress.com/2014/07/petergriffen-rollerblade-animation-actionmodal-0014x.png",
-                "scores" : [5,4,3,4,3,2,3,1,4,5]
-            }, {
-            	"name" : "Homer Simpson",
-                "photo" : "https://s-media-cache-ak0.pinimg.com/736x/3a/11/68/3a116884945f870924f1ffd3f36fc015--los-simpsons-homer-simpson.jpg",
-                "scores" : [5,4,2,5,1,1,2,1,3,5]
+                "scores" : [5,4,3,4,3,2,3,1,4,5] 
             }, {
             	"name" : "Stan Smith",
                 "photo" : "http://img14.deviantart.net/d2f5/i/2011/216/9/f/good_morning_usa_by_koisnake-d45h0kt.png",
@@ -36,7 +32,7 @@ var friends = [ {
             }, {
             	"name" : "Baloo",
                 "photo" : "http://www.behindthevoiceactors.com/_img/chars/baloo-the-jungle-book-2-3.71.jpg",
-                "scores" : [5,4,2,5,1,1,2,1,3,5]
+                "scores" : [1,2,3,5,2,4,1,5,2,5]
             }, {
             	"name" : "Po The Panda",
                 "photo" : "https://static.comicvine.com/uploads/original/9/93477/2535397-po.jpg",
