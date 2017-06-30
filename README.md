@@ -23,8 +23,18 @@
 
 * The result will display both the name and picture of the closest match. 
 
-## Below Are some screen shots and a link to a video of the working app.
+## Below Are some screen shots and a link to a video of the working app:
 
+![Friend Finder-1](./images/friend1.png)
+![Friend Finder-1](./images/friend2.png)
+![Friend Finder-1](./images/friend3.png)
+![Friend Finder-1](./images/friend4.png)
+![Friend Finder-1](./images/friend5.png)
+![Friend Finder-1](./images/friend6.png)
+
+
+
+* Here is a link to The Video:
 
 
 
