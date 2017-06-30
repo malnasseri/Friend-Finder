@@ -23,7 +23,7 @@
 
 * The result will display both the name and picture of the closest match. 
 
-** Below Are some screen shots and a link to a video of the working app.
+## Below Are some screen shots and a link to a video of the working app.
 
 
 
